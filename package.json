@@ -1,0 +1,17 @@
+{
+  "name": "social-links-profile",
+  "version": "1.0.0",
+  "description": "This is my solution to the Social links profile challenge on Frontend Mentor.",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": ["Frontend Mentor", "social links profile", "responsive design", "front-end development", "HTML", "CSS", "SCSS", "Parcel", "BEM", "web development", "coding challenge"],
+  "author": "Zsanett Fekete",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,115 @@
+@use 'normalize';
+@use 'base';
+@use 'variables' as vars;
+
+.profile-card {
+    background-color: vars.$color-dark-grey;
+    border-radius: vars.$radius-card;
+    padding: 1.5rem 1.5rem 0.2rem 1.5rem;
+    min-width: 20.5rem;
+    height: 36.3rem;
+    align-self: center;
+
+    @media (min-width: vars.$breakpoint) {
+        width: 24rem;
+        height: 38.2rem;
+    }
+
+    &__header {
+        display: grid;
+        justify-items: center;
+        
+        .profile-card {
+            
+            &__image {
+                border-radius: vars.$radius-img;
+                width: 5.55rem;
+                margin-block: 0 1.8rem;
+
+                @media (min-width: vars.$breakpoint) {
+                    margin-block: 1rem 1.8rem;
+                }
+            }
+
+            &__name {
+                font-size: vars.$size-name-mobile;
+                font-weight: vars.$weight-700;
+                color: vars.$color-white;
+            }
+
+            &__location {
+                font-size: vars.$size-location-mobile;
+                font-weight: vars.$weight-700;
+                color: vars.$color-green;
+                margin-block: 0.6rem 1.9rem;
+                word-spacing: 1px;
+
+                @media (min-width: vars.$breakpoint) {
+                    margin-block: 0.7rem 1.7rem;
+                }
+            }
+
+            &__introduction {
+                font-size: vars.$size-description-mobile;
+                font-weight: vars.$weight-400;
+                color: vars.$color-white;
+                word-spacing: 1.5px;
+            }
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-block: 1.6rem 1.2rem;
+        white-space: nowrap;
+
+        @media (min-width: vars.$breakpoint) {
+            margin-block: 1.65rem 1.2rem;
+        }
+
+        .profile-card__btns {
+            border: none;
+            color: vars.$color-white;
+            background-color: vars.$color-grey;
+            font-size: vars.$size-btn-mobile;
+            font-weight: vars.$weight-600;
+            border-radius: vars.$radius-btn;
+            cursor: pointer;
+            width: 100%;
+            padding-block: .9rem;
+
+            @media (min-width: vars.$breakpoint) {
+                width: 90%;
+                align-self: center;
+            }
+
+            &:hover {
+                background-color: vars.$color-green;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+
+.attribution {
+    color: vars.$color-white;
+    font-size: vars.$size-attribution;
+    text-align: center;
+
+    &__link {
+        text-decoration: none;
+
+        &:link,
+        &:visited {
+            font-weight: vars.$weight-700;
+            color: vars.$color-green;
+        }
+        
+        &:hover {
+            color: vars.$color-grey;
+            transition: all 0.3s ease;
+        }
+    }
+}
