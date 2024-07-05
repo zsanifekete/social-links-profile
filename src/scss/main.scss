@@ -6,7 +6,7 @@
     background-color: vars.$color-dark-grey;
     border-radius: vars.$radius-card;
     padding: 1.5rem 1.5rem 0.2rem 1.5rem;
-    min-width: 20.5rem;
+    width: max(18rem, 90%);
     height: 36.3rem;
     align-self: center;
 
@@ -87,6 +87,7 @@
 
             &:hover {
                 background-color: vars.$color-green;
+                color: vars.$color-dark-grey;
                 transition: all 0.4s ease;
             }
         }
@@ -97,6 +98,7 @@
     color: vars.$color-white;
     font-size: vars.$size-attribution;
     text-align: center;
+    align-self: center;
 
     &__link {
         text-decoration: none;
@@ -112,4 +114,10 @@
             transition: all 0.3s ease;
         }
     }
+}
+
+.profile-card__btns:focus,
+.attribution__link:focus {
+    outline: 1px solid vars.$color-white;
+    outline-offset: 1px;
 }
