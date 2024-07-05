@@ -52,26 +52,26 @@
 
   <body>
 
-    <main class="profile-card">
+    <main class="profile-card" role="main">
 
-        <header class="profile-card__header">
+        <header class="profile-card__header" role="banner">
             <img class="profile-card__image" src="images/avatar-jessica.jpeg" alt="Jessica Randall">
             <h1 class="profile-card__name">Jessica Randall</h1>
             <h2 class="profile-card__location">London, United Kingdom</h2>
             <p class="profile-card__introduction">"Front-end developer and avid reader."</p>
         </header>
 
-        <section class="profile-card__social-links">
-            <button class="profile-card__btns" type="button" id="github">GitHub</button>
-            <button class="profile-card__btns" type="button" id="frontendmentor">Frontend Mentor</button>
-            <button class="profile-card__btns" type="button" id="linkedin">LinkedIn</button>
-            <button class="profile-card__btns" type="button" id="twitter">Twitter</button>
-            <button class="profile-card__btns" type="button" id="instagram">Instagram</button>
-        </section>
+        <nav class="profile-card__social-links" role="navigation">
+            <button class="profile-card__btns" type="button" id="github" aria-label="GitHub">GitHub</button>
+            <button class="profile-card__btns" type="button" id="frontendmentor" aria-label="Frontend Mentor">Frontend Mentor</button>
+            <button class="profile-card__btns" type="button" id="linkedin" aria-label="LinkedIn">LinkedIn</button>
+            <button class="profile-card__btns" type="button" id="twitter" aria-label="Twitter">Twitter</button>
+            <button class="profile-card__btns" type="button" id="instagram" aria-label="Instagram">Instagram</button>
+        </nav>
 
     </main>
 
-    <footer class="attribution">
+    <footer class="attribution" role="contentinfo">
         Challenge by
         <a
           class="attribution__link"
