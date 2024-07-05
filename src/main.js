@@ -1,6 +1,6 @@
 const links = {
     github: 'https://github.com/',
-    frontendmentor: 'https://frontendmentor.com/',
+    frontendmentor: 'https://www.frontendmentor.io/',
     linkedin: 'https://linkedin.com/',
     twitter: 'https://twitter.com/',
     instagram: 'https://instagram.com/'
@@ -8,6 +8,6 @@ const links = {
 
 Object.keys(links).forEach(id => {
     document.getElementById(id).addEventListener('click', function() {
-        window.location.href = links[id];
+        window.open(links[id], '_blank')
     });
 });
